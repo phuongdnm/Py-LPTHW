@@ -1,2 +1,3 @@
 Just test my git on desktop
-- Change 1: from my secon account: phuongcode2303@gmail.com
+- Test 1: edited from my second account: phuongcode2303@gmail.com to my main account
+- Test 2: edited from my main accout and sent to my second account

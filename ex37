@@ -1,0 +1,143 @@
+del: delete variables or elements of lists
+  1.  >>> phuong = [1,2,3,4]
+      >>> del phuong[2]
+      >>> phuong
+      [1,2,4]
+  2.  >>> x=y=5
+      >>> del x
+      >>> x
+      Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      NameError: name 'x' is not defined
+
+
+as: creat an alias while import modules
+    >>> import math as phuong
+    >>> phuong.cos(phuong.pi)
+    -1.0
+ -Because inside "math" module there is a number "pi". This code will calculate
+ the cosine of pi :))
+
+
+global: declare that a variable inside the function is global
+    >>> phuong = 10
+    >>> def read():
+           print phuong
+    >>> def change_phuong():
+           global phuong
+           phuong = 2303
+    >>>
+    >>> read()
+    10
+    >>> change_phuong()
+    >>> read()
+    2303
+    >>> phuong
+    2303
+
+
+with : use to wrap the execution of a block of code within methods defined by
+the context manager. I don't understand this keyword clearly :)))
+    >>> with open('test.txt', 'w') as phuong:
+            phuong.write("Hello World!")
+
+
+assert: is used to debug
+ - While programming, sometimes we wish to know the internal state or check if our assumptions are true. assert helps us do this and find bugs more conveniently. assert is followed by a condition.
+ - If the condition is true, nothing happens. But if the condition is false, AssertionError is raised. For example:  
+    >>> phuong = 5
+    >>> assert phuong < 20
+    >>> assert phuong > 20
+    Traceback (most recent call last):
+     File "<stdin>", line 1, in <module>
+    AssertionError
+
+
+pass: is a null statement in Python. Nothing happends when it is executed
+    >>> def phuong():
+           pass
+    >>>
+    >>> phuong()
+    >>>
+    (nothing happends) :))
+
+
+yield: is used in a function like a "return" statement. But 'yield' returns a
+generator.
+ - Generator is an iterator that generates ONE item at a time. A large list of
+ value will take a lot of memory. Generators are useful in this situation as it
+ generates only one value at a time instead of storing ALL in memory.
+ - For example:
+     >>> g = (x**2 for x in range(0,100,5))
+ - Use 'next()' function to show each number as shown below:
+     >>> next(g)
+     0
+     >>> next(g)
+     25
+     >>> next(g)
+     100
+     >>> next(g)
+     225
+
+
+break - continue: they are used inside 'for' and 'while' loops to alter their
+normal behavior
+ - 'break' will end the smallest loop it is in and control flows to the statement immediately below the loop.
+ - 'continue' causes to end the current iteration of the loop, but not the whole loop. It won't exits the loop.
+ - For example: 
+    >>> for i in range(6):
+            if i == 5:
+                break
+            print i
+    0
+    1
+    2
+    3
+    4
+
+    >>> for i in range(6):
+            if i == 5:
+               continue
+            print i
+    0
+    1
+    2
+    3
+    4
+    6
+    (skip number 5)
+
+
+except + try: It's so complicated to understand and to use :))
+
+
+import: is used to import modules into the current namespace.
+ - Two type: import + modules (bring all every features in the modules)
+             from "modules" import "function"
+ - For example:
+    >>> import math
+    >>> math.cos(math.pi)
+    -1.0
+
+    >>> from math import cos, pi
+    >>> cos(pi)
+    -1.0
+    (in this situation, you don't need to type "math.cos(pi)"" )
+
+
+class: use in OOP (object-oriented programming)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
